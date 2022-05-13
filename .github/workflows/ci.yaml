@@ -12,10 +12,6 @@ jobs:
       - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
 
       - uses: container-tools/kind-action@fdfd7e7ffb39e532f9de844dba8f1a29ae7e0f75 # renovate: tag=v1.7.0
-        timeout-minutes: 5
-        with: 
-          kubectl_version: v1.22.2
-          registry: false
           
       - name: Install kyverno
         run: |
